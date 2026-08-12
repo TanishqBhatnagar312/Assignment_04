@@ -1,15 +1,15 @@
 students = []
 
 def add_student():
-    s_id = input("Enter ID: ")
+    id = input("Enter ID: ")
     name = input("Enter Name: ")
     age = input("Enter Age: ")
     course = input("Enter Course: ")
     marks = input("Enter Marks: ")
     
-    student = {"ID": s_id, "Name": name, "Age": age, "Course": course, "Marks": marks}
+    student = {"ID": id, "Name": name, "Age": age, "Course": course, "Marks": marks}
     students.append(student)
-    print("Student added!")
+    print("Student is added!")
 
 def view_all():
     if len(students) == 0:
@@ -56,7 +56,7 @@ def delete_student():
         print("Student ID not found.")
 
 while True:
-    print("\n--- STUDENT MENU ---")
+    print("\nSTUDENT MENU\n")
     print("1. Add Student")
     print("2. View All Students")
     print("3. Search Student")
@@ -77,7 +77,7 @@ while True:
     elif choice == "5":
         delete_student()
     elif choice == "6":
-        print("Goodbye!")
+        print("End")
         break
     else:
-        print("Invalid choice! Please choose 1 to 6.")
+        print("Invalid choice! Please choose from 1 to 6.")
